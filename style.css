@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary: #18db86;
+    --Secundary: white;
+    --secundary-light: rgba(173, 173, 173);
+    --dark1: #222222;
+    --dark2: #050505;
+}
+
+body  {
+    font-size: 18px;
+    font-family: 'Signika', sans-serif;
+    color: var(--Secundary);
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.navbar a:hover {
+    border-bottom:var(--primary) solid;
+    transition: 0.1s;
+    
+}
+
+.hero {
+    background-color: var(--dark2);
+    position: relative;
+
+}
+
+.hero img {
+    width: 100%;
+    height:500px;
+    opacity: 0.35;
+}
+
+span {
+    color: var(--primary);
+}
+
+/* CIRCLE     -----       PROFILE */
+
+.profile div {
+    position:absolute;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+
+}
+.square {
+    width: 320px;
+    height: 450px;
+    background-color:var(--dark1);
+    opacity: 0.7;
+    z-index: 10;
+    top: 70px;
+}
+.circle-trans {
+    width: 290px;
+    height: 290px;
+    opacity: .2;
+    border-radius: 50%;
+    border: solid 30px var(--primary);
+    z-index: 19;
+    top: 90px;
+}
+.circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: solid 15px var(--primary);
+    z-index: 21;
+    top: 120px;
+
+}
+.profile-img {
+    top: 129px;
+    z-index: 100;
+}
+
+.profile-img img {
+    width: 212px;
+    height: 212px;
+    border-radius: 100%;
+
+    
+}
+
+
+
+
+/* SQUARE  TEXT - ICONS */
+
+.square-text {
+    font-size: 1.85rem;
+    color: var(--Secundary);
+    top: 380px;
+    z-index: 11;
+
+}
+.square-text2 {   
+     font-size: 1rem;
+    color: var(--Secundary);
+    top: 418px;
+    z-index: 11;
+
+}
+.square-text3 {
+    font-size: 1.3rem;
+    color: var(--Secundary);
+    top: 490px;
+    z-index: 11;
+
+}
+.square-text3:hover {
+    border-bottom: var(--primary) solid;
+    
+}
+
+.square-text3 a {
+    color: var(--Secundary);
+    text-decoration: none;
+}
+.contact-icon {
+    top: 450px;
+    z-index: 11;
+}
+.contact-icon img {
+    width: 40px;
+    margin: 0 10px;
+
+}
+
+.contact-icon img:hover {
+    transform:scale(1.3);
+    transition: 0.1s;
+
+}
+
+
+/* SECTION WITH IMG  - BRIEFCASE INTERFACE */
+
+.briefcase{
+    background: var(--dark1);
+
+
+}
+.briefcase-section h2 {
+    padding: 30px 30px;
+    text-align: center;
+
+
+}
+.briefcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,auto));
+    gap: 32px;
+    width: 90%;
+    margin: 0 auto; 
+
+
+}
+
+
+.briefcase-grid img {
+    width: 100%;
+    border-radius: 8.50px;
+    transition:transform 0.2s ease ;
+    filter: drop-shadow(28px 20px 5px #393939c0);
+    
+}
+
+.briefcase-grid img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/******** SKILLS SECTION    -  conocimientos ****/
+section.skills {
+    background-color: var(--dark1);
+
+}
+.skill {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+    justify-content: center;
+    gap: 170px;
+    width: 94%;
+    margin: 0 auto;
+    padding-bottom: 110px;
+
+}
+.skill h2 {
+    padding-bottom: 60px;
+    margin-top: 50px;
+
+}
+
+.skill img {
+    width: 97%;
+
+}
+
+.knowledge {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(80px,auto));
+    justify-content:center;
+    gap: 30px;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50px,auto));
+    justify-content:center;
+    gap:50px;
+}
+
+
+/****** EFECTO DE    TOOLTIP *****/
+
+.skill h3 {
+    background-color: var(--dark2);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    width: 100px;
+    color: var(--primary);
+    transform: translate(0px,-100px);
+    opacity: 0; 
+    transition: transform 0.4s ease, opacity 0.4s ease;
+
+}
+.knowledge>div:hover h3,
+.tools>div:hover h3{
+    transform: translate(0px,-150px);
+    opacity: 1;
+}
+
+/*  ABOUT  ME SOBRE *******/
+
+.about {
+    background-color: var(--dark2);
+ 
+}
+
+.about-flex {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 200px;
+
+
+}
+.about p {
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+    color: var(--secundary-light);
+
+}
+.social {
+    border-left:var(--Secundary) 5px solid;
+    padding-left: 50px
+
+}
+
+.social img {
+    width:60px ;
+    margin: 10px;
+
+}
+
+/********* footer **/
+
+footer {
+    background-color: var(--dark2);
+    text-align: center;
+    color: var(--secundary-light);
+
+}
