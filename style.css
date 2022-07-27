@@ -297,11 +297,10 @@ section.skills {
 
 }
 
-/********* footer **/
+/*********  THE    FOOTER    ***************/
 
 footer {
     background-color: var(--dark2);
     text-align: center;
     color: var(--secundary-light);
-
 }
