@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "eins-modal": "^2.2.2"
+  },
+  "name": "portafolio1.6",
+  "description": "tipo portafolio",
+  "version": "1.0.0",
+  "main": "portafolio 2022",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenzkupinc/Website6.git"
+  },
+  "author": "Jenzku Pinc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenzkupinc/Website6/issues"
+  },
+  "homepage": "https://github.com/jenzkupinc/Website6#readme"
+}

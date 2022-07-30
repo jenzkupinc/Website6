@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary: #18db86;
+    --Secundary: white;
+    --secundary-light: rgba(173, 173, 173);
+    --dark1: #222222;
+    --dark2: #050505;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Signika', sans-serif;
+    color: var(--Secundary);
+
+}
+
+/************************  BARRA NAVEGACION *****************************/
+
+.navbar1 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.navbar1 ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.navbar1 a {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.navbar1 a:hover {
+    border-bottom: var(--primary) solid;
+    transition: 0.1s;
+
+}
+
+
+.hero1 {
+    background-color: var(--dark2);
+    position: relative;
+
+}
+.hero1 .img img {
+  
+    width: 212px;
+    height: 212px;
+    border-radius: 100%;
+  
+
+}
+.hero1 .img {
+    width: 100%;
+    height: 500px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.profile img{ 
+    position: absolute;
+
+}
+.profile {
+    display: flex;
+    justify-content: center;
+
+}
+
+.profile .square {
+     width: 680px;
+    height: 390px;
+    padding: 20px 60px;
+    margin-top: 30px;
+    margin-left: 100px;
+    background: var(--dark1);
+    opacity: 0.34;
+    z-index: 4;
+    top:90px;
+}
+
+ p,h2,h3 {
+
+    color:#a12121;
+    text-decoration: none;
+    opacity:1;
+    font-size: 15px;
+    z-index:var(--secundary-light) 11;
+}
+

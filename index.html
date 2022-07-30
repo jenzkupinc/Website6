@@ -6,27 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
+ 
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css">
 
+</head> 
 <body>
     <header>
         <div class="hero">
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li><a href="#"> Inicio </a></li>
-                        <li><a href="#"> Portafolio </a></li>
-                        <li><a href="#"> Sobre mi </a></li>
+            <div class="container">
+                <div class="navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="#"> Inicio </a></li>
+                            <li><a href="#"> Portafolio </a></li>
+                            <li><a href="about.html"> Sobre mi </a></li>
 
-                    </ul>
-                </nav>
+                        </ul>
+                    </nav>
 
+                </div>
+                <img src="img/space.jpg" alt="">
             </div>
-            <img src="img/space.jpg" alt="">
         </div>
 
 
@@ -52,12 +57,12 @@
 
 
     <section class="briefcase" id="briefcase">
-        <div class="briefcase-section">
+        <div class="briefcase-section container">
             <h2><Span> Briefcase |</Span> Portafolio</h2>
             <div class="briefcase-grid">
-                <div><img src="img/1pagina-web.png" alt=""></div>
-                <div><img src="img/02pagina-web.png" alt=""></div>
-                <div><img src="img/03pagina-web.png" alt=""></div>
+                <div><a data-modal-id="myModal"><img src="img/1pagina-web.png" alt=""></a></div>
+                <div><a data-modal-id="page2"><img src="img/02pagina-web.png" alt=""></a></div>
+                <div><a data-modal-id="page3"><img src="img/03pagina-web.png" alt=""></a></div>
 
             </div>
 
@@ -68,7 +73,7 @@
 
 
     <section class="skills">
-        <div class="skill">
+        <div class="skill container">
             <div class="knowledge-part">
                 <h2>knowledge |<span> Conocimientos</span></h2>
                 <div class="knowledge">
@@ -128,7 +133,7 @@
 
 
     <section class="about">
-        <div class="about-flex">
+        <div class="about-flex container">
             <div class="about-info">
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quaerat dolore ad iusto? Magni
                     vitae eligendi obcaecati voluptatem odio modi. Perspiciatis quos libero aliquid. Incidunt recusandae
@@ -139,32 +144,172 @@
             </div>
 
             <div class="social">
-                <a href="https://www.linkedin.com/in/jesus-luis-pincay-rodr%C3%ADguez-a38b08170"><img src="img/linkedin.svg"  alt=""></a>
+                <a href="https://www.linkedin.com/in/jesus-luis-pincay-rodr%C3%ADguez-a38b08170"><img
+                        src="img/linkedin.svg" alt=""></a>
                 <a href="https://www.facebook.com/JLuisPinc010/"><img src="img/facebook.svg" alt=""></a>
                 <a href="https://t.me/jzuspinc"><img src="img/telegramWHITE.svg" alt=""></a>
-                <a href="https://www.youtube.com/channel/UCVh_px7xcqWtqond46bZvzg"><img src="img/youtube.svg" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCVh_px7xcqWtqond46bZvzg"><img src="img/youtube.svg"
+                        alt=""></a>
             </div>
-          
-            
+
+
 
 
 
         </div>
- </section>
+    </section>
 
 
- <footer> 
-    <p>  © Copyright | Designed by Jenzku Pinc/CODER</p>
+    <footer>
+        <p> © Copyright | Designed by Jenzku Pinc/CODER</p>
 
- </footer>
-
-
+    </footer>
 
 
+    <!--       MODAL SECTION-->
+
+
+    <div id="myModal" class="eins-modal" data-options="openTransition: expandIn; 
+openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+
+            EJEMPLO PRUEBA
+
+            <button class="eins-modal-close-button"> OK </button>
+        </div>
+
+    </div>
+
+
+
+    <!--     modal sectiom        -------------------------------------------------------------
+    ---------------------------------------------------
+---------------------->
+
+
+    <div id="page2" class="eins-modal" data-options="openTransition: expandIn; 
+openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="page2-content">
+                <div class="eins-modal-preview">
+                    <img src="img/page2large.png" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>es una herramienta que recoge el conjunto de contenido, documentos, obras, presentaciones y demás
+                        con
+                        el objetivo de presentar el mejor trabajo de un individuo u organización, presentados en formato
+                        digital </p>
+                
+                <div class="div eins-modal-text2">
+                    <span>ENLACE</span><a href="https://jenzkupinc.github.io/Website6/">Github Host page</a>
+                </div>
+                <div class="eins-modal-text3">
+                    <span>Material usado</span>
+                    <div class="eins-modal-tec">
+
+                        <img src="/img/seo-icon.png" alt="">
+
+                        <img src="/img/wordpress-icon.png" alt="">
+
+                        <img src="/img/woo-icon.png" alt="">
+
+                        <img src="/img/css-icon.png" alt="">
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+     </div>
+
+    </div>
+
+
+
+    <!-- ----------
+        ______________________
+        __________________________  modal sectiom   -->
+        <div id="page2" class="eins-modal" data-options="openTransition: expandIn; 
+openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="page2-content">
+                <div class="eins-modal-preview">
+                    <img src="img/page2large.png" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>es una herramienta que recoge el conjunto de contenido, documentos, obras, presentaciones y demás
+                        con
+                        el objetivo de presentar el mejor trabajo de un individuo u organización, presentados en formato
+                        digital </p>
+                
+                <div class="div eins-modal-text2">
+                    <span>ENLACE</span><a href="jenzkupinc.github.io/pagina-web/">Github Host page</a>
+                </div>
+                <div class="eins-modal-text3">
+                    <span>Material usado</span>
+                    <div class="eins-modal-tec">
+
+                        <img src="/img/seo-icon.png" alt="">
+
+                        <img src="/img/wordpress-icon.png" alt="">
+
+                        <img src="/img/woo-icon.png" alt="">
+
+                        <img src="/img/css-icon.png" alt="">
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+     </div>
+<!---  
+     SECTION    MODAL 
+                        STYLE    -->
+
+
+
+    <div id="page3" class="eins-modal" data-options="openTransition: expandIn; 
+openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+
+            EJEMPLO PRUEBA
+
+            <button class="eins-modal-close-button"> OK </button>
+        </div>
+
+    </div>
+    <!--     modal sectiom   -->
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 
 </html>
