@@ -50,53 +50,137 @@ body {
 
 .hero1 {
     background-color: var(--dark2);
-    position: relative;
+
 
 }
-.hero1 .img img {
-  
-    width: 212px;
-    height: 212px;
-    border-radius: 100%;
-  
 
-}
 .hero1 .img {
     width: 100%;
     height: 500px;
     opacity: 1;
     display: flex;
     justify-content: center;
-    z-index: 2;
+    z-index: 9;
 }
-.profile img{ 
+
+
+
+
+
+
+.profile img {
     position: absolute;
 
 }
+
 .profile {
     display: flex;
     justify-content: center;
 
 }
 
-.profile .square {
-     width: 680px;
+.contenedor div {
+    position: absolute;
+
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*.contenedor {
+    display: flex;
+    width: 680px;
     height: 390px;
-    padding: 20px 60px;
-    margin-top: 30px;
-    margin-left: 100px;
-    background: var(--dark1);
-    opacity: 0.34;
-    z-index: 4;
-    top:90px;
+    padding: 0 auto;
+    margin: 20px auto;
+    background-color: var(--dark1);
+    opacity: 0.5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, auto));
+    justify-content: center;
+    position:relative;
+    z-index: 2;
+
+
+}  */
+
+
+
+.square {
+    width: 530px;
+    height: 350px;
+    background-color: var(--dark1);
+    opacity: 0.4;
+    z-index: 10;
+    top: 90px;
+    border-radius: 10px;
+    margin: 4px 60px;
+    padding: 30px 55px;
+    padding-left: 22px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 10px));
+
 }
 
- p,h2,h3 {
+.square div { 
+    margin: 30px 60px;
+     color: rgb(255, 255, 255);
+     z-index: 20;
+   
+}
 
-    color:#a12121;
-    text-decoration: none;
-    opacity:1;
+
+.texto { 
+   
+    display:flex;
+   
+   
     font-size: 15px;
-    z-index:var(--secundary-light) 11;
+    
 }
 
+
+
+
+
+
+/****
+.texto {
+opacity: 1;
+    padding: 50px auto;
+    display: contents;
+    color:var(--Secundary);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    z-index: 11;
+}
+
+.texto:nth-child(1) {
+    transform: scale(1.1);
+    margin-right: 1rem;
+    animation: loader 1s linear infinite;
+
+}
+
+
+.texto2:nth-child(2) {
+    transform: scale(1);
+    animation: loader 1s linear infinite;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes  loader {
+    0%,
+    100% {
+        transform: scale(1);
+
+    }
+    50% {
+        transform: scale(1.2);
+    }
+
+} */
