@@ -2,11 +2,12 @@
   "dependencies": {
     "eins-modal": "^2.2.2"
   },
-  "name": "portafolio1.6",
-  "description": "tipo portafolio",
+  "name": "portafolio1.5",
+  "description": "tipo portafolii",
   "version": "1.0.0",
-  "main": "portafolio 2022",
+  "main": "about.html",
   "scripts": {
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,16 @@
   "bugs": {
     "url": "https://github.com/jenzkupinc/Website6/issues"
   },
-  "homepage": "https://github.com/jenzkupinc/Website6#readme"
+  "homepage": "https://github.com/jenzkupinc/Website6#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "terser-webpack-plugin": "^5.3.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
